@@ -67,7 +67,6 @@ function Form(props) {
 	};
 
 	const handleSubmit = async event => {
-		console.log('handleSubmit');
 		event.preventDefault();
 		setLoading(true);
 		await fetch(`/api/ipsum?count=${paragraphCount}`)
